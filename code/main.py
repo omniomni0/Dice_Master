@@ -1,7 +1,7 @@
 import asyncio
 import logging
 from server.log import *
-from server.tokenX import aboba
+from server.tokenX import TOKEN_X
 from dice.rolldice import Roll
 from dice.coin import coin_f
 from aiogram import Bot, Dispatcher, types
@@ -12,7 +12,7 @@ from aiogram import F
 
 
 logging.basicConfig(level=logging.INFO)
-bot = Bot(token=aboba)
+bot = Bot(token=TOKEN_X)
 dp = Dispatcher()
 
 
