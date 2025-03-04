@@ -2,7 +2,7 @@ import random
 from dice.phrase import *
 
 class Roll:
-	def __init__(self, min, max):
+	def __init__(self, min: int, max: int):
 		self.min = min
 		self.max = max
 		
