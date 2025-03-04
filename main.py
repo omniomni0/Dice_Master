@@ -1,4 +1,4 @@
-from dm_imports import *
+from dm_imports import * # тут все импорты, чтобы в main файл всё не пихать. Их слишком дохера
 
 
 logging.basicConfig(level=logging.INFO)
