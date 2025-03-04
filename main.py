@@ -11,8 +11,16 @@ dp = Dispatcher()
 async def cmd_start(message: types.Message):
 	builder = ReplyKeyboardBuilder()
 	
-	builder.row(row_d20_d4_d6)
-	builder.row(row_d8_d10_d12)
+	builder.row(
+		types.KeyboardButton(text="🎲 D20"),
+		types.KeyboardButton(text="🎲 D4"),
+		types.KeyboardButton(text="🎲 D6"))
+	
+	builder.row(
+		types.KeyboardButton(text="🎲 D8"),
+    	types.KeyboardButton(text="🎲 D10"),
+    	types.KeyboardButton(text="🎲 D12")
+	)
 	builder.row(types.KeyboardButton(text="🪙 Подбросить монетку"))
 	
 	await message.answer("Выбери действие, игрок", reply_markup=builder.as_markup(resize_keyboard=True))
